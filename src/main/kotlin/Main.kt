@@ -16,3 +16,6 @@ fun main() {
     fun main() {
         println("homework")
     }
+    fun main() {
+        println("homework_2_test")
+    }
