@@ -13,9 +13,4 @@ fun main() {
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
         println("i = $i")
     }
-    fun main() {
-        println("homework")
-    }
-    fun main() {
-        println("homework_2_test")
-    }
+}
