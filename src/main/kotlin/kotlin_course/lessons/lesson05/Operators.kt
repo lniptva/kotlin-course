@@ -1,30 +1,7 @@
 Задачи с простыми операторами
 fun main() {
     println("=== Задачи с простыми операторами ===")
-
-fun main() {
-    // Задача 1
-    val intensity: Double = 100.0
-    val attenuation: Double? = null
-    val result1 = intensity * (attenuation ?: 0.5)
-    println("Интенсивность звука после затухания: $result1")
-
-    // Задача 2
-    val cargoCost: Double? = null
-    val cost = cargoCost ?: 50.0
-    val insurance = cost * 0.005
-    val result2 = cost + insurance
-    println("Полная стоимость доставки: $result2")
-
-    // Задача 3
-    val pressure: Double? = null
-    if (pressure == null) {
-        println("Ошибка: отсутствуют показания атмосферного давления")
-    } else {
-        println("Атмосферное давление: $pressure")
-    }
-}
-    (18 || (6 / 2 != 3))
+    println((14 - 4 <= 10) || (6 / 2 != 3))
     println((9 + 1 == 10) && (8 % 2 == 0))
     println((7 - 2 < 5) || (4 * 3 != 12))
     println((18 / 6 >= 3) && (5 + 5 == 10))
@@ -57,3 +34,30 @@ fun main() {
     var j = 4
     println(((j-- < 4) && (6 + 0 == 6)) || !(5 % 2 != 1))
 }
+
+
+Elvis Operator part
+
+fun main() {
+    // Задача 1
+    val intensity: Double = 100.0
+    val attenuation: Double? = null
+    val result1 = intensity * (attenuation ?: 0.5)
+    println("Интенсивность звука после затухания: $result1")
+
+    // Задача 2
+    val cargoCost: Double? = null
+    val cost = cargoCost ?: 50.0
+    val insurance = cost * 0.005
+    val result2 = cost + insurance
+    println("Полная стоимость доставки: $result2")
+
+    // Задача 3
+    val pressure: Double? = null
+    if (pressure == null) {
+        println("Ошибка: отсутствуют показания атмосферного давления")
+    } else {
+        println("Атмосферное давление: $pressure")
+    }
+}
+
