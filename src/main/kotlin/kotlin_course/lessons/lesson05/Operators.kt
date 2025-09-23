@@ -36,9 +36,9 @@ fun main() {
 }
 
 
-Elvis Operator part
+//Elvis Operator part
 
-fun main() {
+fun mainElvis() {
     // Задача 1
     val intensity: Double = 100.0
     val attenuation: Double? = null
