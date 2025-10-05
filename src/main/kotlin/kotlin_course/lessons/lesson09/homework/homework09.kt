@@ -2,7 +2,7 @@ package ru.stimmax.kotlin_course.lessons.lesson09.homework
 
 fun main() {
 
-    println("=== Работа с массивами Array ===")
+// Работа с массивами Array
 
     // 1. Массив из 5 целых чисел от 1 до 5
     val numbers = arrayOf(1, 2, 3, 4, 5)
@@ -76,7 +76,7 @@ fun main() {
     findString(words, "tli") // выведет Kotlin
 
 
-    println("\n=== Работа со списками List ===")
+  // Работа со списками List
 
     // 1. Пустой неизменяемый список
     val emptyList: List<Int> = listOf()
@@ -142,7 +142,7 @@ fun main() {
     println(evenNumbers)
 
 
-    println("\n=== Работа с множествами Set ===")
+// Работа с множествами Set
 
     // 1. Пустое неизменяемое множество
     val emptySet: Set<Int> = emptySet()
