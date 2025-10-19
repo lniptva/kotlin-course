@@ -3,29 +3,52 @@ package ru.stimmax.kotlin_course.lessons.lesson13.homework
 fun main() {
 
     // Создадим тестовые словари для примеров
+    //1.
     val testTimes = mapOf("LoginTest" to 12.4, "RegistrationTest" to 8.5, "SearchTest" to 15.2)
+    //2.
     val testMetadata = mapOf("testLogin" to "UI, regression", "testRegister" to "API, smoke", "testSearch" to "UI, performance")
+    //3-4.
     val testResults = mutableMapOf("Test1" to "passed", "Test2" to "failed", "Test3" to "passed", "Test4" to "skipped")
+    //5.
     val bugTracker = mutableMapOf("BUG-101" to "fixed", "BUG-102" to "in progress", "BUG-103" to "open")
+    //6.
     val webResults = mapOf("index.html" to 200, "login.html" to 404, "about.html" to 200)
+    //7.
     val responseTimes = mapOf("authService" to 320, "userService" to 180, "paymentService" to 500)
+    //8.
     val apiStatuses = mapOf("getUser" to "OK", "updateUser" to "Failed", "deleteUser" to "Skipped")
+    //9.
     val config = mapOf("os" to "Windows", "browserType" to "Chrome", "resolution" to "1920x1080")
+    //10.
     val versions = mapOf("v1.0" to "stable", "v1.1" to "beta")
+    //11.
     val deviceSettings = mapOf("Samsung S21" to "Android 13", "iPhone 14" to "iOS 17")
+    //12.
     val testErrors = mapOf(404 to "Page not found", 500 to "Internal error", 403 to "Forbidden")
+    //13.
     val testScenarios = mapOf("TestA_v1" to "Passed", "TestB_v2" to "Failed", "TestC_v2" to "Skipped")
+    //14.
     val moduleResults = mapOf("Auth" to "Passed", "Payments" to "Failed", "Profile" to "Passed")
+    //15.
     val envSettings = mutableMapOf("os" to "Windows", "browser" to "Chrome")
+   //16.
     val bugsA = mapOf("BUG-1" to "fixed", "BUG-2" to "open")
     val bugsB = mapOf("BUG-3" to "in review")
+    //17.
     val tempData = mutableMapOf("session1" to "done", "session2" to "done")
+    //18.
     val reportData = mapOf("TestLogin" to "passed", "TestLogout" to "skipped", "TestSearch" to "failed")
+    //19-21.
     val configCopy = mapOf("os" to "Windows", "browser" to "Chrome", "resolution" to "FullHD")
+    //22.
     val testExecution = mapOf(1 to 12.5, 2 to 8.3, 3 to 15.7)
+    //23.
     val perfResults = mapOf("v1.0" to 120.5, "v2.0" to 98.3)
+    //24.
     val compileErrors = emptyMap<Int, String>()
+    //25-27.
     val loadResults = mapOf("Test1" to "passed", "Test2" to "failed", "Test3" to "passed")
+    //28.
     val serviceResults = mapOf("optionalTest1" to "failed", "mainTest" to "passed", "optionalTest2" to "skipped")
 
     // 1. Дан словарь с именем и временем выполнения каждого автоматизированного теста в секундах.
@@ -33,7 +56,7 @@ fun main() {
     val averageTime = testTimes.values.average()
     println("Среднее время выполнения теста: $averageTime")
 
-    // 2. Имеется словарь с метаданными автоматизированных тестов, где ключи — это имена тестовых методов а значения - строка с метаданными.
+    // 2. Имеется словарь с метаданными автоматизированных тестов, где ключи — это имена тестовых методов, а значения - строка с метаданными.
     // Выведите список всех тестовых методов.
     println("Методы тестов: ${testMetadata.keys}")
 
