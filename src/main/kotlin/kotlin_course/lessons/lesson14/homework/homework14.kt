@@ -1,6 +1,6 @@
 package ru.stimmax.kotlin_course.lessons.lesson14.homework
 
-// Домашнее задание по ООП (Kotlin)
+// Домашнее задание по ООП
 
 // Задание 1: Событие — Вечеринка
 class Party(val location: String, val attendees: Int) {
