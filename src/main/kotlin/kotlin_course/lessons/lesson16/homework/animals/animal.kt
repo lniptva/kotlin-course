@@ -10,21 +10,21 @@ open class Animal {
 //Собака
 class Dog : Animal() {
     override fun makeSound() {
-        println("Bark")
+        println("\u001B[33mBark\u001B[0m")
     }
 }
 
 //Кошка
 class Cat : Animal() {
     override fun makeSound() {
-        println("Meow")
+        println("\u001B[35mMeow\u001B[0m")
     }
 }
 
 //Птицы
 class Bird: Animal() {
     override fun makeSound() {
-        println("Tweet")
+        println("\u001B[36mTweet\u001B[0m")
     }
 }
 
