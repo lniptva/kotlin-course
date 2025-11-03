@@ -5,7 +5,7 @@ abstract class Printer {
     abstract fun print(text: String)
 }
 
-// Лазерный принтер – печатает слова по одному
+// Лазерный принтер
 class LaserPrinter : Printer() {
     override fun print(text: String) {
         val words = text.split(" ")
@@ -15,7 +15,7 @@ class LaserPrinter : Printer() {
     }
 }
 
-// Струйный принтер – тоже по словам, просто другой тип
+// Струйный принтер
 class InkjetPrinter : Printer() {
     override fun print(text: String) {
         val words = text.split(" ")
