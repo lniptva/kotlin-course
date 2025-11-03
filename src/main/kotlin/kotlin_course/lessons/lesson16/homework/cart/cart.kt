@@ -28,30 +28,14 @@ class Cart {
         }
     }
 
-    // Переопределяем toString() для красивого вывода
-    override fun toString(): String {
-        val builder = StringBuilder()
-        var totalItems = 0
-        var totalQuantity = 0
-        builder.appendLine("ID товара | Количество")
-        builder.appendLine("----------------------")
-        for ((id, qty) in items) {
-            builder.appendLine("$id        | $qty")
-            totalItems++
-            totalQuantity += qty
-        }
-        builder.appendLine("----------------------")
-        builder.appendLine("Всего артикулов: $totalItems, всего товаров: $totalQuantity")
-        return builder.toString()
+    // Проверка корзины
+    fun main() {
+        val cart = Cart()
+        cart.addToCart(101)
+        cart.addToCart(102, 3)
+        cart.addToCart(mapOf(103 to 2, 104 to 5))
+        cart.addToCart(listOf(101, 105, 106))
+        println(cart)
     }
 }
 
-// Проверка корзины
-fun main() {
-    val cart = Cart()
-    cart.addToCart(101)
-    cart.addToCart(102, 3)
-    cart.addToCart(mapOf(103 to 2, 104 to 5))
-    cart.addToCart(listOf(101, 105, 106))
-    println(cart)
-}
